@@ -5,7 +5,7 @@
 - HTML
 
 **Ссылка на GitHub Pages website** 
-https://github.com/LaAlmaDeMadhatter/js-cp-diploma-edited
+https://github.com/LaAlmaDeMadhatter/js-cp-diploma-edited-main
 
 **Описание файлов JS**
 - [createRequest](./md/createRequest.md)

@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   buyingHall.innerHTML = selectSeanse.hallName;
   priceStandart.innerHTML = selectSeanse.priceStandart;
 
-  getRequest(request, (response) => {
+  sendRequest(request, (response) => {
     console.log(response)
     if (response) {
       selectSeanse.hallConfig = response;
@@ -69,3 +69,18 @@ document.addEventListener("DOMContentLoaded", () => {
     window.location.href = "payment.html";
   });
 });
+
+
+//const buyingSection = document.querySelector('.buying');
+//const movieTitle = buyingSection.querySelector('.buying__info-title').textContent;
+//const sessionStart = buyingSection.querySelector('.buying__info-start').textContent;
+//const hall = buyingSection.querySelector('.buying__info-hall').textContent;
+//const hint = buyingSection.querySelector('.buying__info-hint p').innerHTML;
+
+//const chairElements = buyingSection.querySelectorAll('.conf-step__chair');
+//const chairs = Array.from(chairElements).map(chair => chair.className);
+
+//const priceStandart = buyingSection.querySelector('.conf-step__legend-value.price-standart').textContent;
+//const priceVIP = buyingSection.querySelector('.conf-step__legend-value.price-vip').textContent;
+
+//const bookButton = buyingSection.querySelector('.acceptin-button');

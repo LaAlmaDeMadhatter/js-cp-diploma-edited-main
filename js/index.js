@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   };
 
-  getRequest(Request, (response) => {
+  sendRequest(Request, (response) => {
     let object = {};
     object.seances = response.seances.result; 
     object.films = response.films.result;

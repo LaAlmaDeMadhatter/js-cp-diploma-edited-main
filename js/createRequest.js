@@ -1,11 +1,13 @@
-function getRequest(body, callback = (response) => {}) {
-    let xhr = new XMLHttpRequest();
 
-  xhr.open("POST", "https://jscp-diplom.netoserver.ru/", true);
-  xhr.responseType = "json";
-  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-  xhr.send(body);
-  xhr.onload = () => {
-    callback(xhr.response);
+function sendRequest(body, callback = (response) => {}) {
+  const request = new XMLHttpRequest();
+
+  request.open("POST", "https://jscp-diplom.netoserver.ru/", true);
+  request.responseType = "json";
+  request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+  request.send(body);
+
+  request.onload = () => {
+    callback(request.response);
   };
 }
